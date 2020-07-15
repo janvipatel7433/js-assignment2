@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+<script>
+	
+	/*DATA TYPES
+	JavaScript variables can hold many data types:
+	numbers, strings, objects,boolean*/
+	
+	var length = 16;                               // Number
+	var lastName = "Johnson";                      // String
+	var x = {firstName:"John", lastName:"Doe"};    // Object
+	
+	document.getElementById("demo").innerHTML = length;
+	document.getElementById("demo1").innerHTML = lastName;
+	document.getElementById("demo2").innerHTML = x.firstName;
+	
+	/*JavaScript has dynamic types. This means that 
+	the same variable can be used to hold different data types*/
+	var x;           // Now x is undefined
+	x = 5;           // Now x is a Number
+	x = "John";      // Now x is a String
+	document.getElementById("demo3").innerHTML = x;
+	
+	
+	
+	/*STRING
+	string can also write in single quotes and double quotes*/
+	var carName1 = "Volvo";   // Using double quotes
+	var carName2 = 'Volvo';   // Using single quotes
+	document.getElementById("demo4").innerHTML = carName1;
+	document.getElementById("demo5").innerHTML = carName2;
+	
+	
+	
+	/*NUMBERS
+	Numbers can be written with, or without decimals*/
+	var x1 = 34.00;     // Written with decimals
+	var x2 = 34;        // Written without decimals
+	
+	
+	
+	/*BOOLEANS
+	Booleans can only have two values: true or false*/
+	var x = 5;
+	var y = 5;
+	var z = 6;
+	document.getElementById("demo6").innerHTML = (x == y);       // Returns true
+	document.getElementById("demo7").innerHTML = (x == z)       // Returns false
+	
+	
+	/*OBJECTS
+	JavaScript objects are written with curly braces {}*/
+	var person = {
+	  firstName : "John",
+	  lastName  : "Doe",
+	  age     : 50,
+	  eyeColor  : "blue"
+	};
+
+	document.getElementById("demo8").innerHTML =
+	person.firstName + " is " + person.age + " years old.";
+	
+	
+	/*UNDEFINED
+	 a variable without a value, has the value undefined*/
+	 var car;
+	 document.getElementById("demo9").innerHTML = car;
+	
+	
+	/*NULL
+	the data type of null is an object*/
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+	person = null;
+	document.getElementById("demo10").innerHTML = typeof person;
+	
+	
+	/*ARRAYS
+	JavaScript arrays are written with square brackets.
+	Array items are separated by commas*/
+	var cars = ["Saab","Volvo","BMW"];
+	document.getElementById("demo11").innerHTML = cars[0];
+		
+</script>
+</body>
+</html>
