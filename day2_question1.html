@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="myFunction()">Clear Console</button>
+<script>
+//The console.log() method Outputs a message to the console
+		console.log("Hello! Press the button to clear the console!");
+
+//The console.clear() method clears the console.
+		function myFunction() 
+		{
+		  console.clear();		
+		}
+	
+//The console.count() method is used to print number of time that particular condition    
+		for (i = 0; i < 10; i++) 
+		{
+		  console.count();		
+		}
+//The console.error() method Outputs an error message to the console	
+		console.error("It is an error");	
+
+//The console.group() method indicates the start of a message group. All messages will from now on be written inside this group.
+		console.log("Hello letsupgrade");
+		console.group();					
+		console.log("Hello there, it's time to learn new thing with group");
+
+//The console.info() method writes a message to the console.
+		console.info("Hello world!");
+
+//The console.table() method writes a table in the console view.
+		var a = {firstname:"Janvi",lastname:"patel",age:20};
+		var b = {firstname:"Jiyaa",lastname:"patel",age:20};
+		var c = {firstname:"Janu",lastname:"patel",age:20};
+		console.table({a, b, c});
+
+//The console.time() method starts a timer in the console view.
+		console.time();
+		for (i = 0; i < 100; i++)
+		{
+			//any code
+		}
+//The the console.timeEnd() method to end the timer and display the result in the console view.
+		console.timeEnd();
+		
+//The console.war() method outputs a warning message to the console
+		console.warn("This is a warning!");
+
+
+
+
+</script>
+</body>
+</html>
